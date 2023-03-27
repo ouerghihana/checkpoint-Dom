@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping card</title>
+    <link rel="stylesheet"   href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"   integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+                  
+  
+  <div class="container-title">
+    <img src="shopping_cart-01.jpg" alt="logo" height="80" width="150" />
+    <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
+  </div>
+  <hr />
+
+  <div class="product-container">
+    <!-- Total Price -->
+    <div class="shopping-total bg-dark text-white"> 
+        Shopping Bag Total: <span id="prix-total">0</span>$
+    </div>
+</div> 
+
+  <!-- First Product -->
+  <div class="row product-div ml-auto mr-auto align-items-center" id="col1-delete">
+    <!-- delete button X -->
+    <div class="col delete-like">
+      <button class="btn-delete">
+        <img src="https://img.icons8.com/ios-glyphs/30/000000/multiply.png" />
+      </button>
+    </div>
+    <!-- end delete -->
+
+    <!-- produit1 -->
+    <div class="row mb-4 d-flex justify-content-between align-items-center">
+      <div class="col-md-2 col-lg-2 col-xl-2">
+        <img src="dress2.jpg" class="img-fluid rounded-3" alt="Cotton dress" />
+
+        <h3 class="text-muted">Dress</h3>
+        <!-- icone heart -->
+        <i class="fas fa-heart"></i>
+      </div>
+
+      <div class="col product-qnt">
+        <!-- compteur -->
+        <!-- button moins -->
+        <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+          <button class="btn btn-link px-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+            <i class="fas fa-minus"></i>
+          </button>
+        </div>
+        <!-- compteur initié à zéro -->
+        <span class="quantity">0</span>
+        <!-- button plus -->
+        <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+          <button class="btn btn-link px-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+        <div class="col product-price">
+          <span class="prx">40</span>$
+        </div>
+      </div>
+    </div>
+    <hr />
+               <!-- produit2 -->
+
+               <div class="row mb-4 d-flex justify-content-between align-items-center">
+                <!-- delete button  X-->
+                <div class="col delete-like">
+                    <button class="btn-delete"><img src="https://img.icons8.com/ios-glyphs/30/000000/multiply.png" alt="delete icon"></button>
+                </div>
+                <!-- end delete -->
+                <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img src="robe1.jpg"  class="img-fluid rounded-3" alt="Cotton dress">
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-6">
+                    <h3 class="text-muted">Dress</h3>
+                    <!--icone heart-->
+                    <i class="fas fa-heart"></i>
+                    <div class="col product-qnt">
+                        <!--compteur-->
+                        <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <!--button moins-->
+                            <button class="btn btn-link px-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <!--compteur initié a zero -->
+                            <span class="quantity">0</span>
+                            <!--button plus -->
+                            <button class="btn btn-link px-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="col product-price">
+                            <span class="prx">35</span>$
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            
+                        <!--link to script file -->
+
+
+    <script src="Cardshop.js"></script>
+                   
+</body>        
+</html>
